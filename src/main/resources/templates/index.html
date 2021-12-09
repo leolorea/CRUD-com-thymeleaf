@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="saveLoc" method="post">
+<pre>
+
+Code: <input type="text" name="code"/>
+Name: <input type="text" name="name"/>
+Type: 
+		Urban <input type="radio" name="type" value="URBAN"/>
+		Rural <input type="radio" name="type" value="RURAL"/>
+<input type="submit" value="save"/>
+</pre>
+</form>
+
+<a href="displayLocations">View All</a>
+
+<div>
+<b th:text="${msg}" ></b>
+</div>
+
+</body>
+</html>
